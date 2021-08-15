@@ -1,0 +1,3 @@
+Create a code to read the files, their location, add contains in it and delete the files if required.
+
+Create the menu bar so that users can do it above mentioned task from the menu bar.
