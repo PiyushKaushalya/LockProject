@@ -81,29 +81,4 @@ public class FileOrganization
 		return false;
 	}
   }
-
-  /**
-   * This method will search the filename in the folderpath
-   * @param FolderPath
-   * @param fileName
-   * @return
-   */
-  public static boolean searchFile(String FolderPath,String fileName) 
-  {
-	  //adding folderpath with filename and creating file object
-	File file = new File(FolderPath+"\\"+fileName);
-	
-	try
-	{
-		if(file.exists())
-			return true;
-		else
-			return false;
-	}
-	catch(Exception Ex)
-	{
-		return false;
-	}
-  }
-
-}
+} 

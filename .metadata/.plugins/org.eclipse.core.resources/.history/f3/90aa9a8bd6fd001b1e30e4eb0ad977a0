@@ -32,15 +32,7 @@ public class LockedMeProject
 			case 3:
 				deleteFile();
 				break;
-
-			case 4:
-				searchFile();
-				break;
-
-			case 5:
-				System.exit(0);
-				break;
-
+				
 			default:
 				System.out.println("Invalid Options");
 			}
@@ -58,8 +50,6 @@ public class LockedMeProject
 		System.out.println("1. Display All Files");
 		System.out.println("2. Add New Files");
 		System.out.println("3. Delete a File");
-		System.out.println("4. Search a file");
-		System.out.println("5. Exit");
 		System.out.println("*************************");
 
 		Scanner obj = new Scanner(System.in);
@@ -130,22 +120,4 @@ public class LockedMeProject
 			System.out.println("Process got failed.Please contact to Admin");
 
 	}
-
-	public static void searchFile() 
-	{
-		String fileName;
-		Scanner obj = new Scanner(System.in);
-
-		// Code for searching a file in the folderPath
-		System.out.println("Enter the file name to search");
-		fileName = obj.nextLine();
-		boolean isSearch = FileOrganization.searchFile(FolderPath, fileName);
-
-		if (isSearch)
-			System.out.println("File found in the folder");
-		else
-			System.out.println("File not found");
-
-	}
-
-}
+}	

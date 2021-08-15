@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class LockedMeProject 
 {
-	static final String FolderPath = "D:\\LockedFiles";
+	static final String FolderPath = "D:\\Phase1Project\\LockedFiles";
 
 	public static void main(String[] args) 
 	{
